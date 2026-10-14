@@ -1,7 +1,8 @@
 {
   "name": "exam-todo-list",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "homepage": "https://yome07.github.io/exam-todo-list",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -22,6 +23,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
-    "vite": "^7.1.7"
+    "vite": "^7.3.7"
   }
 }
