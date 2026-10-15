@@ -1,8 +1,7 @@
 name: Déploiement de l'Application React sur GitHub Pages
 
 on:
-  push:
-    branches: [main] # On ne déploie que ce qui est sur la branche principale
+  push: # Vérifier et construire chaque branche poussée
 
 jobs:
   build-and-test: # Le nom de notre premier job
@@ -48,6 +47,7 @@ jobs:
     name: Déployer sur GitHub Pages
     # Ce job ne commencera que si le job 'build-and-test' a réussi
     needs: build-and-test
+    if: github.ref == 'refs/heads/main'
 
     # Permissions nécessaires pour que le job puisse écrire sur GitHub Pages
     permissions:
